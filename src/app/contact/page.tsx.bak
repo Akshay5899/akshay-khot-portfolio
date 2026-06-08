@@ -1,0 +1,118 @@
+import React from 'react';
+import { Mail, Phone, MapPin, Sparkles } from 'lucide-react';
+import { PageContainer } from '@/components/shared/PageContainer';
+import { Navbar } from '@/components/layout/Navbar';
+import { Footer } from '@/components/layout/Footer';
+import { ContactForm } from '@/features/portfolio/ContactForm';
+
+export const metadata = {
+  title: 'Contact Our Engineering Team | Nexvora Tech',
+  description: 'Initiate dynamic project scheduling, request cryptographic penetration audits, or discuss cloud scaling parameters with Nexvora Tech\'s leadership.',
+};
+
+export default function ContactPage() {
+  return (
+    <PageContainer>
+      <Navbar />
+
+      {/* Hero Header */}
+      <section className="relative pt-32 pb-12 md:pt-40 md:pb-16 w-full overflow-hidden bg-slate-955">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(99,102,241,0.05),transparent_50%)] pointer-events-none" />
+        <div className="max-w-7xl mx-auto px-6 text-center flex flex-col items-center gap-6 relative z-10">
+          <span className="text-xs font-bold uppercase tracking-widest text-indigo-400">COMMUNICATION MATRIX</span>
+          <h1 className="text-4xl md:text-6xl font-extrabold text-white tracking-tight leading-tight max-w-4xl font-display">
+            Connect with our systems architects
+          </h1>
+          <p className="text-slate-400 text-sm md:text-base leading-relaxed max-w-2xl">
+            Whether scoping a multi-cloud migration, scheduling an AI model fine-tuning, or initiating a code audit, our technical squad is ready to assist.
+          </p>
+        </div>
+      </section>
+
+      {/* Split Terminal Layout */}
+      <section className="py-16 md:py-24 w-full bg-slate-950/40 relative border-t border-slate-900/60">
+        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          
+          {/* Left Side: Active ContactForm */}
+          <div className="rounded-3xl border border-slate-900 bg-slate-950/50 backdrop-blur-md overflow-hidden relative">
+            <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/5 via-transparent to-transparent pointer-events-none" />
+            <ContactForm />
+          </div>
+
+          {/* Right Side: Corporate Directory Info */}
+          <div className="flex flex-col gap-8 text-left">
+            <div className="flex flex-col gap-3">
+              <span className="text-xs font-bold uppercase tracking-widest text-indigo-400">CORPORATE DIRECTORY</span>
+              <h2 className="text-2xl md:text-3xl font-extrabold text-white tracking-tight">
+                Direct Channels & Coordinates
+              </h2>
+              <p className="text-slate-400 text-xs md:text-sm leading-relaxed max-w-md">
+                Skip standard queues. Reach out to dedicated technical nodes for immediate operational scheduling.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              
+              <div className="p-6 rounded-2xl border border-slate-900 bg-slate-955/20 backdrop-blur-sm flex flex-col gap-4">
+                <div className="h-9 w-9 rounded-xl bg-indigo-500/10 flex items-center justify-center border border-indigo-500/25 text-indigo-400">
+                  <Mail className="h-4.5 w-4.5" />
+                </div>
+                <div className="flex flex-col gap-1">
+                  <span className="text-[10px] font-bold uppercase tracking-widest text-slate-500">Sales / Inquiries</span>
+                  <a href="mailto:info@nexvora.tech" className="text-sm font-bold text-slate-200 hover:text-indigo-400 transition-colors">
+                    info@nexvora.tech
+                  </a>
+                  <a href="tel:+919429525226" className="text-xs text-slate-400 hover:text-indigo-400 transition-colors mt-0.5">
+                    +91 9429525226
+                  </a>
+                </div>
+              </div>
+
+              <div className="p-6 rounded-2xl border border-slate-900 bg-slate-955/20 backdrop-blur-sm flex flex-col gap-4">
+                <div className="h-9 w-9 rounded-xl bg-indigo-500/10 flex items-center justify-center border border-indigo-500/25 text-indigo-400">
+                  <Sparkles className="h-4.5 w-4.5" />
+                </div>
+                <div className="flex flex-col gap-1">
+                  <span className="text-[10px] font-bold uppercase tracking-widest text-slate-500">HR / Careers</span>
+                  <a href="mailto:hr@nexvora.tech" className="text-sm font-bold text-slate-200 hover:text-indigo-400 transition-colors">
+                    hr@nexvora.tech
+                  </a>
+                  <a href="tel:+917016977949" className="text-xs text-slate-400 hover:text-indigo-400 transition-colors mt-0.5">
+                    +91 7016977949
+                  </a>
+                </div>
+              </div>
+
+              <div className="p-6 rounded-2xl border border-slate-900 bg-slate-955/20 backdrop-blur-sm flex flex-col gap-4 md:col-span-2">
+                <div className="h-9 w-9 rounded-xl bg-indigo-500/10 flex items-center justify-center border border-indigo-500/25 text-indigo-400">
+                  <MapPin className="h-4.5 w-4.5" />
+                </div>
+                <div className="flex flex-col gap-1">
+                  <span className="text-[10px] font-bold uppercase tracking-widest text-slate-500">Corporate HQ Location</span>
+                  <span className="text-sm font-bold text-slate-200">
+                    Nexvora Tech Private Limited
+                  </span>
+                  <span className="text-xs text-slate-400 leading-relaxed mt-1">
+                    404 Cryptographic Enclave, Level 8, Telemetry Towers, Gujarat, India.
+                  </span>
+                </div>
+              </div>
+
+            </div>
+
+            <div className="rounded-2xl border border-dashed border-slate-900 p-6 flex flex-col gap-2">
+              <span className="text-[10px] font-bold uppercase tracking-widest text-indigo-400">SECURE SHELL PROTOCOL</span>
+              <p className="text-xs text-slate-500 leading-relaxed">
+                All communications and attachments transmitted through our digital console portals are subject to end-to-end zero-trust encryption and automatic SOC2 logging schedules.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <Footer />
+    </PageContainer>
+  );
+}
