@@ -7,8 +7,8 @@ import { ContactForm } from '@/components/portfolio/ContactForm';
 import { Card } from '@/components/ui/Card';
 
 export const metadata = {
-  title: 'Contact Our Engineering Team | Nexvora Tech',
-  description: 'Initiate dynamic project scheduling, request cryptographic penetration audits, or discuss cloud scaling parameters with Nexvora Tech\'s leadership.',
+  title: 'Contact | Akshay Khot',
+  description: 'Contact Akshay Khot for full stack development, MERN applications, REST APIs, JWT authentication, and responsive UI design.',
 };
 
 export default function ContactPage() {
@@ -25,7 +25,7 @@ export default function ContactPage() {
             Initiate System Scoping
           </h1>
           <p className="text-slate-450 text-xs md:text-sm leading-relaxed max-w-2xl">
-            Partner with our systems engineers. Whether building resilient cloud infrastructure or automated telemetry models, we are ready to discuss specifications.
+            Contact me for full stack development, MERN applications, RESTful APIs, JWT authentication, and responsive UI design.
           </p>
         </div>
       </section>
@@ -59,12 +59,12 @@ export default function ContactPage() {
                   <Mail className="h-4.5 w-4.5" />
                 </div>
                 <div className="flex flex-col gap-1">
-                  <span className="text-[9px] font-bold uppercase tracking-widest text-slate-500 font-bold">Partnerships & Sales</span>
-                  <a href="mailto:info@nexvora.tech" className="text-sm font-bold text-slate-200 hover:text-indigo-400 transition-colors">
-                    info@nexvora.tech
+                  <span className="text-[9px] font-bold uppercase tracking-widest text-slate-500 font-bold">Email</span>
+                  <a href="mailto:akshaykhot5899@gmail.com" className="text-sm font-bold text-slate-200 hover:text-indigo-400 transition-colors">
+                    akshaykhot5899@gmail.com
                   </a>
-                  <a href="tel:+14680000000" className="text-xs text-slate-400 hover:text-indigo-400 transition-colors mt-0.5">
-                    +1 468 XXXX XXX
+                  <a href="tel:+919503956424" className="text-xs text-slate-400 hover:text-indigo-400 transition-colors mt-0.5">
+                    +91 9503956424
                   </a>
                 </div>
               </div>
@@ -75,13 +75,11 @@ export default function ContactPage() {
                   <Globe className="h-4.5 w-4.5" />
                 </div>
                 <div className="flex flex-col gap-1">
-                  <span className="text-[9px] font-bold uppercase tracking-widest text-slate-500 font-bold">Careers & HR</span>
-                  <a href="mailto:hr@nexvora.tech" className="text-sm font-bold text-slate-200 hover:text-indigo-400 transition-colors">
-                    hr@nexvora.tech
-                  </a>
-                  <a href="tel:+14680000000" className="text-xs text-slate-400 hover:text-indigo-400 transition-colors mt-0.5">
-                    +1 468 XXXX XXX
-                  </a>
+                  <span className="text-[9px] font-bold uppercase tracking-widest text-slate-500 font-bold">Available For</span>
+                  <span className="text-sm font-bold text-slate-200">Freelance & Full-time</span>
+                  <p className="text-xs text-slate-400 leading-relaxed mt-1">
+                    Open for remote and hybrid engagements across India.
+                  </p>
                 </div>
               </div>
 
@@ -108,12 +106,12 @@ export default function ContactPage() {
                     <MapPin className="h-4.5 w-4.5" />
                   </div>
                   <div className="flex flex-col gap-1">
-                    <span className="text-[9px] font-bold uppercase tracking-widest text-slate-500 font-bold">Nexvora Headquarters</span>
+                    <span className="text-[9px] font-bold uppercase tracking-widest text-slate-500 font-bold">Location</span>
                     <span className="text-sm font-bold text-slate-200">
-                      Nexvora Tech Private Limited
+                      Pune, Maharashtra, India
                     </span>
                     <p className="text-xs text-slate-400 leading-relaxed mt-1">
-                      Ahmedabad, Gujarat, India.
+                      Available for remote and hybrid work across India.
                     </p>
                   </div>
                 </div>
@@ -124,7 +122,7 @@ export default function ContactPage() {
                     src="https://maps.google.com/maps?q=Ahmedabad,%20Gujarat,%20India&t=&z=13&ie=UTF8&iwloc=&output=embed"
                     className="w-full h-full border-none filter grayscale contrast-125 opacity-80 hover:opacity-100 hover:grayscale-0 transition-all duration-300"
                     loading="lazy"
-                    title="Nexvora Headquarters Map Location"
+                    title="Akshay Headquarters Map Location"
                   />
                 </div>
               </div>
@@ -158,3 +156,4 @@ export default function ContactPage() {
     </PageContainer>
   );
 }
+

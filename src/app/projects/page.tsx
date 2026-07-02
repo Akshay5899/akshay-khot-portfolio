@@ -167,7 +167,7 @@ export default function ProjectsPage() {
               Recognized for Architectural Rigor
             </h2>
             <p className="text-slate-400 text-xs md:text-sm leading-relaxed max-w-lg">
-              Our engineering work is built with extreme precision and verified continuously. That is why enterprise stakeholders and security teams rank Nexvora Tech at the peak of development quality.
+              My engineering work is built with extreme precision and verified continuously. That is why clients rank Akshay Khot at the peak of development quality.
             </p>
             <div className="flex flex-wrap gap-6 items-center mt-2">
               <div className="flex flex-col gap-1 border-l-2 border-indigo-500 pl-4">
@@ -192,7 +192,7 @@ export default function ProjectsPage() {
               ))}
             </div>
             <p className="text-sm md:text-base text-slate-200 leading-relaxed italic">
-              &ldquo;The custom vector engine and telemetry system developed by Nexvora allowed our platform to handle infinite concurrency spikes. Excellent communication and elite engineering.&rdquo;
+              &ldquo;The custom vector engine and telemetry system developed by Akshay allowed our platform to handle infinite concurrency spikes. Excellent communication and elite engineering.&rdquo;
             </p>
             <div className="flex items-center gap-3 mt-2">
               <div className="h-9 w-9 rounded-full bg-slate-900 flex items-center justify-center font-bold text-slate-400 border border-slate-800 text-xs">
@@ -231,3 +231,4 @@ export default function ProjectsPage() {
     </PageContainer>
   );
 }
+

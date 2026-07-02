@@ -20,50 +20,50 @@ const SERVICES_LIST = [
   {
     icon: Globe,
     title: 'Web Development',
-    description: 'SaaS platforms, portals & custom web apps built with React, Next.js and Node.js at enterprise scale.',
-    tags: ['React', 'Next.js', 'Node.js', 'GraphQL'],
+    description: 'Responsive web applications built with React, Next.js, TailwindCSS, and clean frontend architecture.',
+    tags: ['React', 'Next.js', 'TailwindCSS', 'JavaScript'],
     link: '/services?tab=web-development',
     column: 'left',
   },
   {
     icon: Smartphone,
-    title: 'Mobile Apps',
-    description: 'Native-performance iOS & Android apps using React Native and Flutter with App Store optimisation.',
-    tags: ['React Native', 'Flutter', 'Swift', 'Kotlin'],
-    link: '/services?tab=mobile-apps',
+    title: 'Backend & API Services',
+    description: 'Secure backend systems, RESTful API design, JWT authentication, and Node.js/Express implementations.',
+    tags: ['Node.js', 'Express', 'REST', 'JWT'],
+    link: '/services?tab=backend-services',
     column: 'left',
   },
   {
     icon: Palette,
-    title: 'UI/UX Design',
-    description: 'Research-led UX, Figma design systems and pixel-perfect handoff — wireframe to live product.',
-    tags: ['Figma', 'Design Systems', 'UX Research'],
-    link: '/services?tab=ui-ux-design',
+    title: 'CMS & Web Platforms',
+    description: 'WordPress, WooCommerce, and custom CMS solutions for content-rich websites and client portals.',
+    tags: ['WordPress', 'WooCommerce', 'ACF', 'PHP'],
+    link: '/services?tab=cms-platforms',
     column: 'left',
   },
   // RIGHT COLUMN
   {
     icon: Cpu,
-    title: 'AI & Automation',
-    description: 'LLM integration, custom ML models and intelligent automation pipelines that drive real business impact.',
-    tags: ['OpenAI', 'LangChain', 'Python', 'PyTorch'],
-    link: '/services?tab=ai-automation',
+    title: 'Database Design',
+    description: 'Schema design, optimization, and integration for MongoDB and MySQL-powered applications.',
+    tags: ['MongoDB', 'MySQL', 'Schema Design', 'Performance'],
+    link: '/services?tab=database-design',
     column: 'right',
   },
   {
     icon: Cloud,
-    title: 'SaaS Development',
-    description: 'Multi-tenant SaaS products with billing, auth and analytics — architected for scale from day one.',
-    tags: ['Multi-tenant', 'Stripe', 'AWS', 'Serverless'],
-    link: '/services?tab=saas-development',
+    title: 'Deployment & Hosting',
+    description: 'Production deployment, hosting, and continuous delivery on Vercel, Netlify, and cloud platforms.',
+    tags: ['Vercel', 'Netlify', 'Deployment', 'CI/CD'],
+    link: '/services?tab=deployment-hosting',
     column: 'right',
   },
   {
     icon: Database,
-    title: 'ERP & CRM Solutions',
-    description: 'SAP, Odoo and Salesforce implementation with custom integrations and seamless data migration.',
-    tags: ['SAP', 'Odoo', 'Salesforce', 'Migration'],
-    link: '/services?tab=erp-crm-solutions',
+    title: 'Maintenance & Support',
+    description: 'Ongoing application maintenance, debugging, testing, and optimization for long-term stability.',
+    tags: ['Testing', 'Debugging', 'Support', 'Optimization'],
+    link: '/services?tab=maintenance-support',
     column: 'right',
   },
 ];
@@ -169,7 +169,7 @@ export const Services = () => {
         <div className="inline-flex items-center gap-2.5">
           <div className="w-6 h-px bg-gradient-to-r from-transparent to-indigo-500/60" />
           <span className="text-[10px] font-bold uppercase tracking-[0.18em] text-indigo-400">
-            What We Build
+            What A Builds
           </span>
           <div className="w-6 h-px bg-gradient-to-r from-indigo-500/60 to-transparent" />
         </div>
@@ -260,30 +260,11 @@ export const Services = () => {
             {/* Central Floating Logo container */}
             <div className="logof">
               <div className="logof-glow" />
-              <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" width="220" height="220" className="drop-shadow-[0_10px_20px_rgba(123,58,235,0.25)]">
-                <defs>
-                  <linearGradient id="logoGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stopColor="#7B3AEB"/>
-                    <stop offset="42%" stopColor="#69A2FF"/>
-                    <stop offset="100%" stopColor="#0FA6E4"/>
-                  </linearGradient>
-                  <linearGradient id="logoGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stopColor="#9B5AFF"/>
-                    <stop offset="100%" stopColor="#2463E9"/>
-                  </linearGradient>
-                  <filter id="logoShadow" x="-28%" y="-28%" width="156%" height="156%">
-                    <feGaussianBlur in="SourceAlpha" stdDeviation="3.5" result="b"/>
-                    <feFlood floodColor="#7B3AEB" floodOpacity="0.4" result="c"/>
-                    <feComposite in="c" in2="b" operator="in" result="s"/>
-                    <feComposite in="SourceGraphic" in2="s" operator="over"/>
-                  </filter>
-                </defs>
-                <g filter="url(#logoShadow)">
-                  <path d="M0 99.7V33C13.1 33 23 45 27.1 49.3V94.9C27.1 98.7 24.3 99.7 22 99.7H0Z" fill="url(#logoGrad1)"/>
-                  <path d="M100 0v77.3C89.7 74.2 77.1 60.8 72.9 56.3V4.9C72.9 1 75.7 0 78 0h22Z" fill="url(#logoGrad2)"/>
-                  <path d="M28 45.8L78 100h22V76.4C91.1 73.8 80.5 61.3 75.4 56L22 0H4.2C2.1 0 0 1.8 0 4.4V31.6C13.1 31.6 21.2 38.7 28 45.8Z" fill="url(#logoGrad1)"/>
-                </g>
-              </svg>
+              <div className="flex h-[220px] w-[220px] items-center justify-center rounded-full border border-indigo-500/15 bg-gradient-to-br from-indigo-950 via-slate-950 to-slate-900 shadow-[0_10px_20px_rgba(123,58,235,0.25)]">
+                <span className="text-[7rem] font-black uppercase tracking-[0.08em] text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-cyan-400 to-slate-100">
+                  A
+                </span>
+              </div>
             </div>
 
             {/* Floating Tags/Metrics */}

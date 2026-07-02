@@ -8,36 +8,36 @@ import { fadeInUp, staggerContainer } from '@/lib/animations';
 const BENEFITS = [
   {
     icon: Zap,
-    title: 'AI-First Workflow',
-    description: 'Every project leverages AI for code generation, testing, and QA — shipping 3× faster without compromising quality.',
-    badge: 'VELOCITY',
+    title: 'MERN Stack Expertise',
+    description: 'Build responsive, high-performance web applications using React, Node.js, Express, and MongoDB.',
+    badge: 'STACK',
     glow: 'rgba(99, 102, 241, 0.12)',
     glowBorder: 'rgba(99, 102, 241, 0.35)',
     iconColor: 'text-indigo-400',
   },
   {
     icon: Shield,
-    title: '98% On-Time Delivery',
-    description: 'Sprint-based execution with transparent timelines. We commit to strict deadlines and we keep them — every single time.',
-    badge: 'RELIABILITY',
+    title: 'Secure API Development',
+    description: 'Design and implement RESTful APIs with JWT authentication and robust backend security safeguards.',
+    badge: 'SECURITY',
     glow: 'rgba(16, 185, 129, 0.12)',
     glowBorder: 'rgba(16, 185, 129, 0.35)',
     iconColor: 'text-emerald-400',
   },
   {
     icon: Cpu,
-    title: 'Full-Stack Expertise',
-    description: 'Frontend to backend, design to deployment, mobile to AI — a single unified team that covers every layer of your stack.',
-    badge: 'ARCHITECTURE',
+    title: 'Clean Code & Maintainability',
+    description: 'Deliver maintainable project architecture with scalable components, reusable patterns, and performance optimization.',
+    badge: 'QUALITY',
     glow: 'rgba(59, 130, 246, 0.12)',
     glowBorder: 'rgba(59, 130, 246, 0.35)',
     iconColor: 'text-blue-400',
   },
   {
     icon: Users,
-    title: 'Dedicated Teams',
-    description: 'No freelancer roulette. You get dedicated, senior-level engineers who know your product inside-out from day one.',
-    badge: 'RESOURCE',
+    title: 'Collaborative Delivery',
+    description: 'Work closely with teams and clients to ship reliable solutions on time, with clear communication and agile execution.',
+    badge: 'DELIVERY',
     glow: 'rgba(139, 92, 246, 0.12)',
     glowBorder: 'rgba(139, 92, 246, 0.35)',
     iconColor: 'text-violet-400',
@@ -117,7 +117,7 @@ const BenefitCard = ({ benefit, idx }: BenefitCardProps) => {
   );
 };
 
-export const WhyNexvora = () => {
+export const WhyAkshay = () => {
   return (
     <section className="py-24 bg-slate-955 relative overflow-hidden border-t border-slate-900/60">
       {/* Background glow radial */}
@@ -131,15 +131,15 @@ export const WhyNexvora = () => {
           <div className="inline-flex items-center gap-2.5">
             <div className="w-6 h-px bg-gradient-to-r from-transparent to-indigo-500/60" />
             <span className="text-[10px] font-bold uppercase tracking-[0.18em] text-indigo-400">
-              Why Choose Us
+              Why Work With Me
             </span>
             <div className="w-6 h-px bg-gradient-to-r from-indigo-500/60 to-transparent" />
           </div>
           <h2 className="text-4xl md:text-5xl font-extrabold text-slate-100 tracking-tight font-display uppercase">
-            Built Different, <span className="bg-gradient-to-r from-indigo-400 via-indigo-300 to-blue-400 bg-clip-text text-transparent">Delivered Better</span>
+            Built for Reliability, <span className="bg-gradient-to-r from-indigo-400 via-indigo-300 to-blue-400 bg-clip-text text-transparent">Designed for Growth</span>
           </h2>
           <p className="text-slate-400 max-w-xl text-xs md:text-sm leading-relaxed">
-            We combine AI-powered workflows, battle-tested engineering, and a relentless focus on outcomes to deliver products that perform.
+            I build scalable MERN applications, secure REST APIs, and responsive interfaces with an emphasis on clean code, performance, and business value.
           </p>
         </div>
 
@@ -159,3 +159,4 @@ export const WhyNexvora = () => {
     </section>
   );
 };
+

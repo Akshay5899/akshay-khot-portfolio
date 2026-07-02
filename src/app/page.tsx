@@ -1,92 +1,134 @@
 import React from 'react';
-import Link from 'next/link';
-import { ArrowRight } from 'lucide-react';
 import { PageContainer } from '@/components/shared/PageContainer';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { Hero } from '@/components/portfolio/Hero';
-import { TrustedBy } from '@/components/portfolio/TrustedBy';
-import { Stats } from '@/components/portfolio/Stats';
 import { Services } from '@/components/portfolio/Services';
-import { WhyNexvora } from '@/components/portfolio/WhyNexvora';
-import { Process } from '@/components/portfolio/Process';
-import { TechStack } from '@/components/portfolio/TechStack';
 import { Projects } from '@/components/portfolio/Projects';
-import { Testimonials } from '@/components/portfolio/Testimonials';
-import { Button } from '@/components/ui/Button';
 
 export default function Home() {
   return (
     <PageContainer>
       <Navbar />
       <Hero />
-      <TrustedBy />
-      <Stats />
-      
-      {/* Services Section */}
       <Services />
 
-      {/* Why Nexvora Section */}
-      <WhyNexvora />
+      <section className="py-24 bg-slate-955 border-t border-slate-900/60">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <span className="text-xs font-bold uppercase tracking-widest text-indigo-400">
+              MY SKILLS
+            </span>
+            <h2 className="mt-4 text-4xl md:text-5xl font-black text-slate-100 tracking-tight uppercase font-display">
+              Core Technical Strengths
+            </h2>
+            <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-slate-400">
+              A practical skill set built for modern full-stack development and polished product delivery.
+            </p>
+          </div>
 
-      {/* Integration Process Timeline */}
-      <Process />
-
-      {/* Tech Stack Capabilities Grid */}
-      <TechStack />
-
-      {/* Projects Showcase Teaser */}
-      <div className="relative w-full border-t border-slate-900/60 bg-slate-955">
-        <Projects limit={3} />
-        <div className="relative z-10 max-w-7xl mx-auto px-6 -mt-8 mb-24 flex justify-center">
-          <Link href="/projects">
-            <Button variant="glass" size="lg" className="group">
-              <span className="flex items-center gap-2 cursor-pointer font-bold uppercase tracking-wider">
-                Explore Case Studies 
-                <ArrowRight className="h-4 w-4 group-hover:translate-x-0.5 transition-transform" />
-              </span>
-            </Button>
-          </Link>
-        </div>
-      </div>
-
-      {/* Testimonials */}
-      <div className="w-full bg-slate-955/40">
-        <Testimonials />
-      </div>
-
-      {/* High-Impact Bottom CTA */}
-      <section className="relative py-24 md:py-32 w-full overflow-hidden bg-slate-955 border-t border-slate-900/60">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(99,102,241,0.06),transparent_60%)] pointer-events-none" />
-        <div className="max-w-4xl mx-auto px-6 text-center flex flex-col items-center gap-8 relative z-10">
-          <span className="text-xs font-bold uppercase tracking-widest text-indigo-400">
-            CONNECT WITH OUR ARCHITECTS
-          </span>
-          <h2 className="text-3xl md:text-6xl font-black text-slate-100 tracking-tight leading-tight uppercase font-display">
-            Ready to construct your next digital masterpiece?
-          </h2>
-          <p className="text-slate-400 max-w-xl text-xs md:text-sm leading-relaxed">
-            Partner with Nexvora Tech to build highly resilient, auto-scaling multi-cloud environments, automated AI agent telemetry loops, and bulletproof security systems.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 mt-4">
-            <Link href="/contact">
-              <Button variant="primary" size="lg" className="group">
-                <span className="flex items-center gap-2 cursor-pointer font-bold uppercase tracking-wider">
-                  Initiate Project Scope
-                  <ArrowRight className="h-4 w-4 group-hover:translate-x-0.5 transition-transform" />
-                </span>
-              </Button>
-            </Link>
-            <Link href="/services">
-              <Button variant="glass" size="lg">
-                <span className="cursor-pointer font-bold uppercase tracking-wider">View Capabilities</span>
-              </Button>
-            </Link>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {[
+              { title: 'Frontend Development', items: ['React.js', 'Next.js', 'Tailwind CSS', 'Responsive UI'] },
+              { title: 'Backend & APIs', items: ['Node.js', 'Express', 'REST APIs', 'JWT Auth'] },
+              { title: 'Database Systems', items: ['MongoDB', 'MySQL', 'Schema Design', 'Data Modeling'] },
+              { title: 'Deployment', items: ['Vercel', 'Netlify', 'CI/CD', 'Performance Tuning'] },
+            ].map((skill) => (
+              <div key={skill.title} className="rounded-3xl border border-slate-800/60 bg-slate-900/40 p-6 shadow-lg shadow-slate-950/10">
+                <h3 className="text-lg font-bold text-slate-100 uppercase tracking-wider mb-4">
+                  {skill.title}
+                </h3>
+                <ul className="space-y-2 text-sm text-slate-400">
+                  {skill.items.map((item) => (
+                    <li key={item} className="flex items-center gap-2">
+                      <span className="h-2.5 w-2.5 rounded-full bg-indigo-500 shrink-0" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
         </div>
       </section>
+
+      <section className="py-24 bg-slate-945 border-t border-slate-900/60">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <span className="text-xs font-bold uppercase tracking-widest text-indigo-400">
+              EXPERIENCE
+            </span>
+            <h2 className="mt-4 text-4xl md:text-5xl font-black text-slate-100 tracking-tight uppercase font-display">
+              Professional Journey
+            </h2>
+            <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-slate-400">
+              A timeline of significant milestones and real-world experience in software engineering and delivery.
+            </p>
+          </div>
+
+          <div className="space-y-8">
+            {[
+              { year: '2021', title: 'Web Developer', detail: 'Built responsive websites and improved UX across several client projects using HTML, CSS, JavaScript, and React.' },
+              { year: '2022', title: 'React & Redux Developer', detail: 'Delivered scalable React applications with structured state management and reusable component libraries.' },
+              { year: '2023', title: 'Team Lead', detail: 'Led a development team to improve delivery velocity by 30% and to ship high-quality frontend and backend solutions.' },
+              { year: '2025', title: 'Full Stack Developer', detail: 'Architected MERN applications, REST APIs, JWT authentication, and database-driven features for production systems.' },
+            ].map((item, idx) => (
+              <div key={item.year} className="grid gap-4 lg:grid-cols-[140px_1fr] lg:items-start">
+                <div>
+                  <span className="text-xs font-bold uppercase tracking-widest text-indigo-400">{item.year}</span>
+                </div>
+                <div className="rounded-3xl border border-slate-800/60 bg-slate-900/40 p-6 shadow-lg shadow-slate-950/10">
+                  <h3 className="text-xl font-bold text-slate-100 tracking-tight">{item.title}</h3>
+                  <p className="mt-3 text-sm leading-relaxed text-slate-400">{item.detail}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="relative py-24 bg-slate-945 border-t border-slate-900/60">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(59,130,246,0.08),_transparent_55%)] pointer-events-none" />
+        <div className="relative max-w-6xl mx-auto px-6 text-center">
+          <span className="text-xs font-bold uppercase tracking-[0.3em] text-indigo-400">
+            PORTFOLIO SPOTLIGHT
+          </span>
+          <h2 className="mt-4 text-4xl md:text-5xl font-black text-slate-100 tracking-tight uppercase font-display">
+            Selected Work That Defines My Craft
+          </h2>
+          <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-slate-400">
+            Every project is built with practical engineering, polished UX, and a clear business outcome in mind. These highlights show how I deliver performance, reliability, and user-first interfaces.
+          </p>
+
+          <div className="mt-12 grid gap-6 md:grid-cols-3">
+            <div className="rounded-3xl border border-slate-800/60 bg-slate-950/70 p-6 text-left shadow-lg shadow-slate-950/20">
+              <h3 className="text-lg font-bold text-slate-100 uppercase tracking-wider">Web Application Systems</h3>
+              <p className="mt-3 text-sm leading-relaxed text-slate-400">
+                Custom dashboards, lead capture flows, and responsive interfaces built with Next.js and React.
+              </p>
+            </div>
+            <div className="rounded-3xl border border-slate-800/60 bg-slate-950/70 p-6 text-left shadow-lg shadow-slate-950/20">
+              <h3 className="text-lg font-bold text-slate-100 uppercase tracking-wider">API & Backend Architecture</h3>
+              <p className="mt-3 text-sm leading-relaxed text-slate-400">
+                Scalable Node.js APIs, secure database models, and polished integration points for real-world deployments.
+              </p>
+            </div>
+            <div className="rounded-3xl border border-slate-800/60 bg-slate-950/70 p-6 text-left shadow-lg shadow-slate-950/20">
+              <h3 className="text-lg font-bold text-slate-100 uppercase tracking-wider">Brand-Focused UI</h3>
+              <p className="mt-3 text-sm leading-relaxed text-slate-400">
+                Clean branding, motion-driven interactions, and layouts optimized for conversion and clarity.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div className="relative w-full border-t border-slate-900/60 bg-slate-955">
+        <Projects limit={3} />
+      </div>
 
       <Footer />
     </PageContainer>
   );
 }
+

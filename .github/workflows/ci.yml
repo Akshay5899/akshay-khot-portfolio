@@ -28,5 +28,6 @@ jobs:
     - name: Run build
       run: npm run build
       env:
-        MONGODB_URI: 'mongodb://127.0.0.1:27017/nexvora-tech-test'
+        MONGODB_URI: 'mongodb://127.0.0.1:27017/Akshay-tech-test'
         NEXT_PUBLIC_APP_URL: 'http://localhost:3000'
+

@@ -9,7 +9,7 @@ import { Card } from '@/components/ui/Card';
 import { PROJECTS } from '@/constants';
 import { fadeInUp, staggerContainer } from '@/lib/animations';
 
-const CATEGORIES = ['All', 'Cloud Engineering', 'Artificial Intelligence', 'Cybersecurity', 'Full-Stack', 'ERP/CRM'];
+const CATEGORIES = ['All', 'Personal Branding', 'Web Application', 'UX & UI'];
 
 interface CaseStudyModalProps {
   project: typeof PROJECTS[number] | null;

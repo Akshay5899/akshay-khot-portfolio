@@ -17,48 +17,50 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Nexvora Tech | Enterprise Software Engineering & AI Architectures',
-    template: '%s | Nexvora Tech',
+    default: 'Akshay Khot | Full Stack Developer',
+    template: '%s | Akshay Khot',
   },
   description:
-    'Nexvora Tech designs and constructs high-performance cloud architectures, custom AI agent telemetry systems, and audited zero-trust cybersecurity shields.',
+    'Portfolio of Akshay Khot, a Full Stack Developer specializing in MERN, REST APIs, JWT authentication, and responsive UI design.',
   keywords: [
-    'Software Architecture',
-    'AI Integrations',
-    'Cybersecurity Auditing',
-    'Kubernetes Engineering',
-    'Nexvora Tech',
-    'Next.js 16 Portfolio',
+    'Full Stack Developer',
+    'MERN',
+    'React',
+    'Node.js',
+    'MongoDB',
+    'JWT',
+    'TailwindCSS',
+    'Akshay Khot',
   ],
-  authors: [{ name: 'Nexvora Tech Engineering Team' }],
-  creator: 'Nexvora Tech',
-  metadataBase: new URL('https://nexvora.tech'),
+  authors: [{ name: 'Akshay Khot' }],
+  creator: 'Akshay Khot',
+  metadataBase: new URL('https://akshay-khot-portfolio'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://nexvora.tech',
-    title: 'Nexvora Tech | Enterprise Software Engineering & AI Architectures',
+    url: 'https://akshay-khot-portfolio',
+    title: 'Akshay Khot | Full Stack Developer',
     description:
-      'We construct high-frequency cloud architectures, automated AI agent workflows, and audited zero-trust cybersecurity shields.',
-    siteName: 'Nexvora Tech',
+      'Portfolio of Akshay Khot, a Full Stack Developer specializing in MERN, REST APIs, JWT authentication, and responsive UI design.',
+    siteName: 'Akshay Khot',
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Nexvora Tech Enterprise Solutions',
+        alt: 'Akshay Khot Portfolio',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Nexvora Tech | Enterprise Software Engineering & AI Architectures',
+    title: 'Akshay Khot | Full Stack Developer',
     description:
-      'We construct high-frequency cloud architectures, automated AI agent workflows, and audited zero-trust cybersecurity shields.',
-    creator: '@nexvoratech',
+      'Portfolio of Akshay Khot, a Full Stack Developer specializing in MERN, REST APIs, JWT authentication, and responsive UI design.',
+    creator: '@akshaykhot',
     images: ['/og-image.jpg'],
   },
   robots: {
@@ -88,13 +90,9 @@ export default function RootLayout({
     >
       <body className="bg-slate-955 text-slate-105 flex min-h-full flex-col font-sans transition-colors duration-250">
         <ThemeProvider>
-          <ToastProvider>
-            {children}
-            {/* <FloatingCTA /> */}
-          </ToastProvider>
+          <ToastProvider>{children}</ToastProvider>
         </ThemeProvider>
-        
-        {/* Move Script outside of body or keep it in head for better performance */}
+
         <Script
           id="theme-init"
           strategy="beforeInteractive"

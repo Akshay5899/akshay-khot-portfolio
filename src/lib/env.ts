@@ -27,7 +27,7 @@ try {
   }
   // Provide safe defaults so building/linting can succeed
   env = {
-    MONGODB_URI: process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/nexvora-tech',
+    MONGODB_URI: process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/Akshay-tech',
     NEXT_PUBLIC_APP_URL: process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000',
     NODE_ENV: (process.env.NODE_ENV as 'development' | 'production' | 'test') || 'development',
     RATE_LIMIT_WINDOW_MS: Number(process.env.RATE_LIMIT_WINDOW_MS) || 60000,
@@ -36,3 +36,4 @@ try {
 }
 
 export { env };
+

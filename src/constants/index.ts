@@ -5,7 +5,6 @@ export const NAVIGATION_LINKS = [
   { name: 'About', href: '/about' },
   { name: 'Services', href: '/services' },
   { name: 'Projects', href: '/projects' },
-  { name: 'Careers', href: '/career' },
   { name: 'Contact', href: '/contact' },
 ];
 
@@ -38,137 +37,38 @@ export const SERVICES = [
 
 export const PROJECTS = [
   {
-    title: 'Aether Telemetry Platform',
-    category: 'Cloud Engineering',
-    description: 'A real-time metrics capture backend processing 100k+ events/sec, using Apache Kafka and custom Next.js visualization boards.',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80',
-    tags: ['React', 'Rust', 'Kafka', 'Tailwind'],
-    link: '#',
-    challenge: 'Legacy telemetry systems suffered from memory bloat and write bottlenecks under 30k events/sec spikes, causing data loss.',
-    solution: 'Constructed an asynchronous ingestion broker in Rust with ring buffers, feeding into a Kafka partition array and displayed in a real-time Next.js console.',
-    kpis: ['99.99% telemetric write accuracy', 'Latency reduced by 85%', 'Ingested 100k+ events/sec']
+    title: 'Portfolio Website',
+    category: 'Personal Branding',
+    description: 'A polished portfolio site showcasing Akshay Pandurang Khot’s full-stack development work, modern UI, and service offerings.',
+    image: 'https://images.unsplash.com/photo-1483058712412-4245e9b90334?auto=format&fit=crop&w=800&q=80',
+    tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'React'],
+    link: '/projects',
+    challenge: 'Build a professional presence that reflects modern web engineering and personal branding.',
+    solution: 'Implemented a responsive App Router portfolio with animated sections, clean UX, and contact capture.',
+    kpis: ['Professional portfolio launched', 'Responsive across all devices', 'Fast page load performance'],
   },
   {
-    title: 'Nova AI Agent Engine',
-    category: 'Artificial Intelligence',
-    description: 'Autonomous customer support agents featuring localized fine-tuned LLM execution, zero latency routing, and CRM sync integrations.',
-    image: 'https://images.unsplash.com/photo-1677442136019-21780efad99a?auto=format&fit=crop&w=800&q=80',
-    tags: ['Next.js', 'Python', 'FastAPI', 'MongoDB'],
-    link: '#',
-    challenge: 'API latency overheads from calling third-party cloud LLMs caused high customer churn during interactive chat sessions.',
-    solution: 'Deployed locally hosted parameters of fine-tuned LLaMA-3 models using vLLM on dedicated GPUs, and connected it to local CRM stores with a FastAPI broker.',
-    kpis: ['Inference speeds under 400ms', 'Token spend overhead reduced by 65%', '85+ agents running active']
+    title: 'Lead Capture System',
+    category: 'Web Application',
+    description: 'A lightweight lead capture workflow with form validation, email submission, and backend persistence.',
+    image: 'https://images.unsplash.com/photo-1559526324-593bc073d938?auto=format&fit=crop&w=800&q=80',
+    tags: ['React', 'Next.js', 'Node.js', 'MongoDB'],
+    link: '/contact',
+    challenge: 'Create a reliable way for visitors to submit inquiries and convert them into leads.',
+    solution: 'Built a secure contact form paired with API routes and validation for smooth submissions.',
+    kpis: ['Improved inquiry flow', 'Secure form handling', 'Easy lead tracking'],
   },
   {
-    title: 'Vortex Secure Encryption Suite',
-    category: 'Cybersecurity',
-    description: 'Fully audited end-to-end encrypted messenger protocol implemented for healthcare personnel, meeting strict HIPAA compliance guidelines.',
-    image: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&q=80',
-    tags: ['React Native', 'WebRTC', 'Go', 'Redis'],
-    link: '#',
-    challenge: 'Data storage leakages and unsecured websocket channels violated strict healthcare privacy compliance frameworks.',
-    solution: 'Designed mTLS handshakes and AES-256 database protection overlays. Encrypted media sharing runs direct P2P connections via WebRTC channels.',
-    kpis: ['100% HIPAA compliant system', 'Zero unencrypted trace routes', '450+ security audits certified']
+    title: 'Custom Service Showcase',
+    category: 'UX & UI',
+    description: 'A curated services section that highlights custom development, integration, and full-stack delivery capabilities.',
+    image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80',
+    tags: ['UI/UX', 'Design Systems', 'Product Strategy'],
+    link: '/services',
+    challenge: 'Present service offerings clearly and professionally while maintaining an elegant brand identity.',
+    solution: 'Designed a refined services showcase with strong copy, responsive layout, and visual polish.',
+    kpis: ['Clear service messaging', 'Improved visitor engagement', 'Built brand authority'],
   },
-  {
-    title: 'Starlight DB Broker',
-    category: 'Cloud Engineering',
-    description: 'High-speed database proxy layer routing 500k queries/sec across clustered PostgreSQL read-replicas with dynamic caching.',
-    image: 'https://images.unsplash.com/photo-1544383835-bda2bc66a55d?auto=format&fit=crop&w=800&q=80',
-    tags: ['Go', 'PostgreSQL', 'Redis', 'Docker'],
-    link: '#',
-    challenge: 'Dynamic database locks and read contention during high transaction periods degraded API performance.',
-    solution: 'Built a lightweight query routing layer in Golang that checks redis cache hits before sending read actions to specific replica pools.',
-    kpis: ['500k+ read requests/sec handled', 'Query latencies reduced to 1.2ms', 'AWS DB overhead reduced by 40%']
-  },
-  {
-    title: 'Helios Zero-Trust Vault',
-    category: 'Cybersecurity',
-    description: 'Audited enclave secrets vault with threshold cryptography for remote banking clusters and automated key rotations.',
-    image: 'https://images.unsplash.com/photo-1601597111158-2fceff270190?auto=format&fit=crop&w=800&q=80',
-    tags: ['Rust', 'AWS Nitro', 'Vault', 'Zero-Trust'],
-    link: '#',
-    challenge: 'Shared root secrets exposed databases to vulnerability risks from compromised administrative accounts.',
-    solution: 'Configured AWS Nitro enclaves utilizing threshold cryptography schemas, where key decryption requires concurrent approval signatures.',
-    kpis: ['Zero-Trust audited security', 'Root key compromise risk eliminated', '100% automated key rotations']
-  },
-  {
-    title: 'Centaur Cognitive Router',
-    category: 'Artificial Intelligence',
-    description: 'Dynamic agent router orchestrating multi-LLM workflows with sub-second feedback loops and automatic fallbacks.',
-    image: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80',
-    tags: ['Python', 'FastAPI', 'Qdrant', 'LangChain'],
-    link: '#',
-    challenge: 'High cost and slow responses when routing every query to GPT-4 regardless of query complexity.',
-    solution: 'Created a classification router checking query complexity. Routes simple queries to localized models and complex logic to GPT-4.',
-    kpis: ['API calling costs reduced by 70%', 'Mean latency lowered to 350ms', 'Seamless failover rates']
-  },
-  {
-    title: 'Orion Real-time Analytics',
-    category: 'Full-Stack',
-    description: 'Live analytics pipeline built using Apache Flink and a Next.js visualization dashboard tracking real-time user metrics.',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80',
-    tags: ['Next.js', 'Go', 'Apache Flink', 'PostgreSQL'],
-    link: '#',
-    challenge: 'Batch jobs took 12+ hours to calculate user telemetry records, leading to delayed business decisions.',
-    solution: 'Designed a stream processing structure in Apache Flink feeding directly into time-series indices for real-time visualization dashboards.',
-    kpis: ['Metric computation time: 1.5s', 'No query execution lag', 'Scaled to 50M records/day']
-  },
-  {
-    title: 'Aegis Network Firewall',
-    category: 'Cybersecurity',
-    description: 'eBPF-powered network filter blockading DDoS anomalies at kernel level before reaching application space.',
-    image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80',
-    tags: ['C++', 'eBPF', 'Linux Kernel', 'Grafana'],
-    link: '#',
-    challenge: 'Application-level firewalls consumed 100% of CPU during malicious traffic spikes, causing service failures.',
-    solution: 'Compiled custom eBPF filters hooked directly to driver network sockets, dropping malicious packets instantly before user-space buffer allocation.',
-    kpis: ['DDoS traffic dropped in 0.05ms', 'Application CPU overhead: < 2%', '100% automated threat detection']
-  },
-  {
-    title: 'Nebula Multi-Cloud Fabric',
-    category: 'Cloud Engineering',
-    description: 'Declarative GitOps template autoscaling serverless pod nodes across AWS and Google Cloud Platform.',
-    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80',
-    tags: ['Kubernetes', 'Terraform', 'ArgoCD', 'GCP'],
-    link: '#',
-    challenge: 'Unpredictable cloud availability limits in individual hosting zones threatened high-transaction system reliability.',
-    solution: 'Setup multi-cloud Kubernetes clusters synchronized continuously through GitOps pipelines running automatic DNS traffic routing.',
-    kpis: ['99.999% global system uptime', 'Zero-downtime cluster switchovers', '50% cloud cost savings']
-  },
-  {
-    title: 'Chronos Ingestion Pipeline',
-    category: 'Full-Stack',
-    description: 'Time-series metric streaming broker handling 5B daily telemetry records with high-availability configuration.',
-    image: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80',
-    tags: ['Rust', 'Apache Kafka', 'ClickHouse', 'React'],
-    link: '#',
-    challenge: 'Standard databases failed to ingest high-frequency server state records, losing critical diagnostic timelines.',
-    solution: 'Deployed a Rust-based consumer thread writing partitioned Kafka packets into highly compressed ClickHouse database stores.',
-    kpis: ['Ingested 5B+ events/day', 'Data compression ratio of 10:1', 'Zero lost log packets']
-  },
-  {
-    title: 'Apex ERP Transaction Ledger',
-    category: 'ERP/CRM',
-    description: 'Encrypted transactional ledger synchronizing SAP inventories with real-time React dashboard systems.',
-    image: 'https://images.unsplash.com/photo-1508873535684-277a3cbcc4e8?auto=format&fit=crop&w=800&q=80',
-    tags: ['Java', 'Spring Boot', 'SAP API', 'React'],
-    link: '#',
-    challenge: 'Manual synchronization of ERP data streams led to double-sold inventories and catalog mismatched entries.',
-    solution: 'Engineered mTLS middleware syncing SAP database states with real-time reactive event triggers, displaying values instantly to users.',
-    kpis: ['Double-sold inventory issues: 0%', 'SAP sync lag reduced to < 1s', 'Manual audit hours saved: 40/wk']
-  },
-  {
-    title: 'VectorSearch LLM Engine',
-    category: 'Artificial Intelligence',
-    description: 'Semantic vector search index processing 10M+ documents with sub-second query and ingestion speeds.',
-    image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80',
-    tags: ['Python', 'Qdrant', 'PyTorch', 'Docker'],
-    link: '#',
-    challenge: 'Static keywords matching failed to retrieve relevant documents from complex multi-layered architectural specs.',
-    solution: 'Fine-tuned sentence embedding models, loaded vector outputs to a Qdrant cluster, and created custom semantic query endpoints.',
-    kpis: ['Mean search precision up 45%', 'Query latency under 120ms', '10M+ documents searchable']
-  }
 ];
 
 export const PROCESS_STEPS = [
@@ -246,7 +146,7 @@ export const FEATURES = [
 
 export const TESTIMONIALS = [
   {
-    quote: "Nexvora re-architected our high-concurrency ingestion streams, moving us from 15k to 120k requests per second with zero message loss. Their Go and Kafka engineering expertise is unmatched.",
+    quote: "Akshay re-architected our high-concurrency ingestion streams, moving us from 15k to 120k requests per second with zero message loss. Their Go and Kafka engineering expertise is unmatched.",
     name: "Sarah Jenkins",
     role: "VP of Cloud Engineering",
     company: "Aether Systems",
@@ -254,7 +154,7 @@ export const TESTIMONIALS = [
     verified: true,
   },
   {
-    quote: "The low-latency LLM routing pipelines built by Nexvora reduced our inference runtime by 35% and decreased token spend overhead significantly. They delivered a state-of-the-art solution.",
+    quote: "The low-latency LLM routing pipelines built by Akshay reduced our inference runtime by 35% and decreased token spend overhead significantly. They delivered a state-of-the-art solution.",
     name: "Marcus Chen",
     role: "Chief Technology Officer",
     company: "Nova AI Labs",
@@ -262,7 +162,7 @@ export const TESTIMONIALS = [
     verified: true,
   },
   {
-    quote: "We commissioned a comprehensive Zero-Trust penetration audit on our healthcare platform. Nexvora fixed five critical IAM security flaws and secured our HIPAA compliance certification ahead of schedule.",
+    quote: "We commissioned a comprehensive Zero-Trust penetration audit on our healthcare platform. Akshay fixed five critical IAM security flaws and secured our HIPAA compliance certification ahead of schedule.",
     name: "Elena Rostova",
     role: "VP of Enterprise Security",
     company: "Vortex Health",
@@ -270,7 +170,7 @@ export const TESTIMONIALS = [
     verified: true,
   },
   {
-    quote: "The zero-trust cryptographic models deployed by Nexvora locked down our multi-tenant fintech workspace completely. Outstanding communication and clean code standards.",
+    quote: "The zero-trust cryptographic models deployed by Akshay locked down our multi-tenant fintech workspace completely. Outstanding communication and clean code standards.",
     name: "Arthur Pendelton",
     role: "Director of Application Security",
     company: "Zenith Securities",
@@ -355,7 +255,7 @@ export const TEAM_MEMBERS = [
 ];
 export const FAQS = [
   {
-    question: "What primary software stacks does Nexvora Tech support?",
+    question: "What primary software stacks does Akshay Khot support?",
     answer: "We specialize in high-performance stacks including Go, Rust, Node.js (TypeScript), Next.js, and Python. On the database and queueing layer, we are experts in PostgreSQL, MongoDB, Redis, Apache Kafka, and RabbitMQ.",
   },
   {
@@ -367,11 +267,11 @@ export const FAQS = [
     answer: "Yes. Our 'Growth Engineering Pod' package provides dedicated monthly technical resources embedded inside your engineering flows, maintaining and scaling your digital platform continuously with strict SLA guarantees.",
   },
   {
-    question: "How does Nexvora ensure absolute security during penetration audits?",
+    question: "How does Akshay ensure absolute security during penetration audits?",
     answer: "We adhere strictly to zero-trust access guidelines. All pen-tests are performed under controlled testing environments or sandbox systems first. We utilize secure encrypted channels for sensitive IAM key exchanges and follow clear NDA boundaries.",
   },
   {
-    question: "Can Nexvora support compliance validation for SOC2, HIPAA, or ISO 27001?",
+    question: "Can Akshay support compliance validation for SOC2, HIPAA, or ISO 27001?",
     answer: "Yes, we design infrastructure strictly to meet enterprise auditing standards. All deployments include GitOps versioning, encrypted data storage, and automated log telemetry compliant with SOC2 and HIPAA controls."
   },
   {
@@ -383,7 +283,7 @@ export const FAQS = [
     answer: "We operate under scoping stages: an initial high-fidelity blueprint sprint, followed by fixed-scope milestones or dedicated monthly pod subscriptions, ensuring cost transparency and predictable velocity."
   },
   {
-    question: "How does Nexvora manage cloud resource spending optimizations?",
+    question: "How does Akshay manage cloud resource spending optimizations?",
     answer: "Every cloud orchestration we construct features automated scaling groups, idle node terminations, and custom budget alerts. We typically reduce legacy cloud hosting bills by 20% to 40%."
   }
 ];
@@ -435,4 +335,5 @@ export const CAREERS_LIST = [
     ]
   }
 ];
+
 

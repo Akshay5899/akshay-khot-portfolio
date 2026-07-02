@@ -34,20 +34,11 @@ export const Navbar = () => {
       }`}
     >
       <div className="flex items-center justify-between">
-        {/* Brand Logo NV - Official SVG switcher */}
+        {/* Brand Logo AK */}
         <Link href="/" className="group flex items-center">
-          <Image
-            src={
-              theme === 'dark'
-                ? '/Assets/images/nv_logo_white.svg'
-                : '/Assets/images/nv_logo_black.svg'
-            }
-            alt="Nexvora Logo"
-            width={140}
-            height={28}
-            className="h-7 w-auto transition-transform duration-300 group-hover:scale-[1.02]"
-            priority
-          />
+          <span className="inline-flex items-center justify-center rounded-2xl border border-slate-800/70 bg-slate-900/80 px-3 py-2 text-sm font-semibold uppercase tracking-[0.35em] text-slate-100 shadow-sm shadow-slate-950/20 transition duration-300 group-hover:bg-slate-800/90">
+            AK
+          </span>
         </Link>
 
         {/* Desktop Links */}
@@ -172,3 +163,4 @@ export const Navbar = () => {
     </header>
   );
 };
+

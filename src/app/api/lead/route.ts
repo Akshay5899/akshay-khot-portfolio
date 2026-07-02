@@ -42,9 +42,10 @@ export async function POST(request: NextRequest) {
 
     return NextResponse.json({
       success: true,
-      message: 'Successfully subscribed to the Nexvora Tech newsletter!',
+      message: 'Successfully subscribed to the Akshay Khot newsletter!',
     });
   } catch (error) {
     return handleApiError(error);
   }
 }
+

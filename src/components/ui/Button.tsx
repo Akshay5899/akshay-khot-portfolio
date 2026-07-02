@@ -18,7 +18,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     const baseStyles = 'inline-flex items-center justify-center rounded-lg font-bold tracking-wider uppercase transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-indigo-500/30 disabled:opacity-50 disabled:cursor-not-allowed select-none cursor-pointer';
 
     const variants = {
-      // Premium theme gradient matching nexvora_index.html design: Purple -> Blue -> Cyan
+      // Premium theme gradient matching Akshay_index.html design: Purple -> Blue -> Cyan
       primary: 'bg-gradient-to-r from-[#7B3AEB] via-[#2463E9] to-[#0FA6E4] text-white hover:brightness-105 shadow-md shadow-indigo-500/10 hover:shadow-lg hover:shadow-indigo-500/25 border-none',
       
       secondary: 'bg-gradient-to-r from-[#2463E9] to-[#0FA6E4] text-white hover:brightness-105 shadow-md shadow-blue-500/10 hover:shadow-lg hover:shadow-blue-500/25 border-none',
@@ -58,3 +58,4 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
 );
 
 Button.displayName = 'Button';
+

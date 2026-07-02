@@ -35,34 +35,13 @@ const STARS = [
 /* ── Nodes ─────────────────────────────────────────────────────────── */
 const NODES = [
   { id: 0, label: 'Web Apps', sub: 'React & Next.js', icon: Globe, color: '#6366f1', angle: 315 },
-  { id: 1, label: 'DevOps', sub: 'K8s & Terraform', icon: Cloud, color: '#3b82f6', angle: 0 },
-  { id: 2, label: 'AI / ML', sub: 'TensorFlow & PyTorch', icon: Cpu, color: '#8b5cf6', angle: 45 },
-  { id: 3, label: 'Mobile', sub: 'React Native', icon: Terminal, color: '#06b6d4', angle: 90 },
-  {
-    id: 4,
-    label: 'Security',
-    sub: 'Zero-Trust & SOC2',
-    icon: Shield,
-    color: '#10b981',
-    angle: 135,
-  },
-  {
-    id: 5,
-    label: 'Databases',
-    sub: 'Postgres & Mongo',
-    icon: Database,
-    color: '#f59e0b',
-    angle: 180,
-  },
-  {
-    id: 6,
-    label: 'Chatbots',
-    sub: 'OpenAI & LangChain',
-    icon: MessageSquare,
-    color: '#ec4899',
-    angle: 225,
-  },
-  { id: 7, label: 'UI / UX', sub: 'Figma & Tailwind', icon: Palette, color: '#a78bfa', angle: 270 },
+  { id: 1, label: 'Backend', sub: 'Node.js & Express', icon: Terminal, color: '#3b82f6', angle: 0 },
+  { id: 2, label: 'Databases', sub: 'MongoDB & MySQL', icon: Database, color: '#f59e0b', angle: 45 },
+  { id: 3, label: 'APIs', sub: 'REST & JWT Auth', icon: Shield, color: '#10b981', angle: 90 },
+  { id: 4, label: 'UI Design', sub: 'Tailwind & Bootstrap', icon: Palette, color: '#a78bfa', angle: 135 },
+  { id: 5, label: 'State', sub: 'Redux & Context', icon: Cpu, color: '#8b5cf6', angle: 180 },
+  { id: 6, label: 'CMS', sub: 'WordPress & WooCommerce', icon: Globe, color: '#06b6d4', angle: 225 },
+  { id: 7, label: 'Deployment', sub: 'Vercel & Netlify', icon: Cloud, color: '#ec4899', angle: 270 },
 ];
 
 /**
@@ -171,22 +150,16 @@ const OrbitalDiagram = ({ activeId, onHover, onLeave }: DiagramProps) => {
         />
         {/* Logo tile */}
         <div
-          className="relative flex h-20 w-20 items-center justify-center overflow-hidden rounded-2xl border bg-white transition-all duration-700 dark:bg-[#060812f5]"
+          className="relative flex h-20 w-20 items-center justify-center overflow-hidden rounded-2xl border bg-slate-950 text-slate-100 transition-all duration-700 dark:bg-[#060812f5]"
           style={{
             borderColor: `${activeNode.color}35`,
             boxShadow: `0 0 36px 10px ${activeNode.color}18`,
             backdropFilter: 'blur(20px)',
           }}
         >
-          <div className="relative h-full w-full">
-            <Image
-              src="/Assets/images/ntv_icon.png"
-              alt="Nexvora"
-              fill
-              className="object-cover"
-              sizes="80px"
-            />
-          </div>
+          <span className="text-3xl font-black uppercase tracking-[0.32em]" style={{ color: activeNode.color }}>
+            AK
+          </span>
         </div>
         {/* Active label below center */}
         <AnimatePresence mode="wait">
@@ -388,7 +361,7 @@ export const Hero = () => {
           >
             <div className="w-8 h-px bg-gradient-to-r from-transparent to-indigo-500/60" />
             <span className="text-[10px] font-bold uppercase tracking-[0.18em] bg-gradient-to-r from-indigo-400 to-blue-400 bg-clip-text text-transparent">
-              AI-Driven Product Engineering
+              Full Stack MERN Portfolio
             </span>
             <div className="w-8 h-px bg-gradient-to-r from-blue-400 to-transparent" />
           </motion.div>
@@ -397,15 +370,11 @@ export const Hero = () => {
           <motion.h1
             variants={fadeInUp}
             custom={1}
-            className="font-display text-4xl sm:text-6xl lg:text-[68px] leading-[1.08] font-extrabold tracking-tight text-slate-100 uppercase"
+            className="font-display text-4xl sm:text-6xl lg:text-[68px] leading-[1.08] font-extrabold tracking-tight text-slate-100"
           >
-            We Engineer <br />
-            <span className="bg-gradient-to-r from-indigo-400 via-indigo-300 to-blue-400 bg-clip-text text-transparent">
-              Digital Products
-            </span>{" "}
-            <br />
-            <span className="font-light text-slate-350 capitalize tracking-normal text-3xl sm:text-5xl lg:text-[52px]">
-              That Perform Beyond Limits
+            <span className="block uppercase">Akshay Pandurang Khot</span>
+            <span className="block text-4xl sm:text-5xl lg:text-[56px] font-light text-slate-350 mt-3">
+              Full Stack Developer
             </span>
           </motion.h1>
 
@@ -415,21 +384,46 @@ export const Hero = () => {
             custom={2}
             className="max-w-xl text-xs sm:text-sm leading-relaxed text-slate-400"
           >
-            From ambitious startups to enterprise systems — Nexvora builds intelligent, scalable digital products with AI-powered precision, modern architecture, and pixel-perfect design.
+            I build scalable, secure MERN applications with React, Node.js, Express, MongoDB, and modern responsive UIs. My work focuses on clean code, performance, and real-world business outcomes.
           </motion.p>
+
+          {/* Portrait */}
+          <motion.div
+            variants={fadeInUp}
+            custom={3}
+            className="mt-8 flex items-center gap-4 rounded-3xl border border-slate-800/80 bg-slate-900/60 p-4 shadow-[0_25px_80px_rgba(15,23,42,0.35)]"
+          >
+            <div className="relative h-20 w-20 overflow-hidden rounded-[2rem] border border-indigo-500/20 shadow-xl shadow-indigo-500/10">
+              <Image
+                src="/Assets/images/akshay.jpg"
+                alt="Portrait of Akshay Khot"
+                fill
+                sizes="80px"
+                className="object-cover"
+              />
+            </div>
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-indigo-300">
+                Akshay Pandurang Khot
+              </p>
+              <p className="text-xs text-slate-400">
+                Full stack developer focused on MERN, UI/UX, and scalable web architecture.
+              </p>
+            </div>
+          </motion.div>
 
           {/* CTA Buttons */}
           <motion.div
             variants={fadeInUp}
-            custom={3}
-            className="flex w-full flex-col sm:flex-row items-center gap-4 mt-2"
+            custom={4}
+            className="flex w-full flex-col sm:flex-row items-center gap-4 mt-6"
           >
             <Link href="/contact" className="w-full sm:w-auto">
               <Button variant="primary" size="lg" className="group w-full sm:w-auto relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-r from-indigo-600/20 to-blue-600/20 blur-md group-hover:scale-110 transition-transform" />
                 <span className="flex items-center justify-center gap-2 font-bold tracking-wider uppercase relative z-10">
                   <Clock className="h-4 w-4 shrink-0" />
-                  Schedule Free Consultation
+                  Contact Me
                   <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
                 </span>
               </Button>
@@ -442,7 +436,7 @@ export const Hero = () => {
               >
                 <span className="flex items-center justify-center gap-2">
                   <Play className="h-3.5 w-3.5 fill-current shrink-0" />
-                  Explore Our Work
+                  View Projects
                   <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
                 </span>
               </Button>
@@ -470,4 +464,5 @@ export const Hero = () => {
     </section>
   );
 };
+
 
