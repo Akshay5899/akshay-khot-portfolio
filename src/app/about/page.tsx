@@ -1,9 +1,5 @@
-'use client';
-
 import React from 'react';
 import { PageContainer } from '@/components/shared/PageContainer';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 
 const TIMELINE_EVENTS = [
   {
@@ -31,7 +27,7 @@ const TIMELINE_EVENTS = [
 export default function AboutPage() {
   return (
     <PageContainer>
-      <Navbar />
+      {/* Nav/Footer moved client-side; omitted during prerender to avoid hook errors */}
 
       {/* Hero Header */}
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 w-full overflow-hidden bg-slate-955">
@@ -166,7 +162,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <Footer />
+      
     </PageContainer>
   );
 }

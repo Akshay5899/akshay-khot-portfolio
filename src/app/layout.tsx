@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
 import { Inter, Outfit } from 'next/font/google';
 import Script from 'next/script';
-import { ThemeProvider } from '@/providers/theme-provider';
-import { ToastProvider } from '@/providers/toast-provider';
+// Providers moved to a client-only wrapper to avoid prerender hook execution
 import './globals.css';
+import { LayoutClient } from '@/components/layout/LayoutClient';
 
 const inter = Inter({
   variable: '--font-inter',
@@ -76,6 +76,8 @@ export const metadata: Metadata = {
   },
 };
 
+export const dynamic = 'force-dynamic';
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -89,9 +91,7 @@ export default function RootLayout({
       style={{ scrollBehavior: 'smooth' }}
     >
       <body className="bg-slate-955 text-slate-105 flex min-h-full flex-col font-sans transition-colors duration-250">
-        <ThemeProvider>
-          <ToastProvider>{children}</ToastProvider>
-        </ThemeProvider>
+        <LayoutClient>{children}</LayoutClient>
 
         <Script
           id="theme-init"

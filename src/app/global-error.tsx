@@ -1,5 +1,4 @@
-'use client';
-
+"use client";
 export default function GlobalError({
   error,
 }: {
@@ -34,3 +33,5 @@ export default function GlobalError({
     </main>
   );
 }
+
+export const dynamic = 'force-dynamic';

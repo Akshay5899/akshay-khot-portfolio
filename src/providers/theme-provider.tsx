@@ -49,7 +49,11 @@ export const useTheme = () => {
   const context = useContext(ThemeContext);
 
   if (!context) {
-    throw new Error('useTheme must be used within a ThemeProvider');
+    // Return safe defaults when ThemeProvider is not present (pre-render or tests)
+    return {
+      theme: 'dark' as Theme,
+      toggleTheme: () => {},
+    } as ThemeContextType;
   }
 
   return context;

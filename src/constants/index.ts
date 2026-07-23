@@ -69,6 +69,17 @@ export const PROJECTS = [
     solution: 'Designed a refined services showcase with strong copy, responsive layout, and visual polish.',
     kpis: ['Clear service messaging', 'Improved visitor engagement', 'Built brand authority'],
   },
+  {
+    title: 'Panchayat Samiti Pune',
+    category: 'Web Application',
+    description: 'SEO-optimized informational site for Panchayat Samiti Pune, deployed on Vercel.',
+    image: 'https://images.unsplash.com/photo-1505685296765-3a2736de412f?auto=format&fit=crop&w=800&q=80',
+    tags: ['Next.js', 'SEO', 'Vercel', 'Tailwind CSS'],
+    link: 'https://panchayat-samiti-pune-seo.vercel.app/',
+    challenge: 'Create an accessible, SEO-first municipal website with clear information architecture.',
+    solution: 'Implemented Next.js with semantic HTML, performant images, and structured metadata for SEO.',
+    kpis: ['Improved search visibility', 'Fast TTFB on Vercel', 'Accessible content structure'],
+  },
 ];
 
 export const PROCESS_STEPS = [
