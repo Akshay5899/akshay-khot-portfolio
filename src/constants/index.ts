@@ -58,6 +58,17 @@ export const PROJECTS = [
     solution: 'Built a responsive Next.js experience with clear messaging, fast asset delivery, and SEO best practices.',
     kpis: ['Improved engagement', 'Fast performance scores', 'Clear product positioning'],
   },
+  {
+    title: 'APMC Newasa',
+    category: 'Web Application',
+    description: 'A responsive React app for APMC Newasa, designed for strong user experience and deployment on Vercel.',
+    image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80',
+    tags: ['React', 'Vercel', 'Tailwind CSS', 'SEO'],
+    link: 'https://apmcnewasa-react.vercel.app/',
+    challenge: 'Deliver a clean, performant marketplace frontend using React with a mobile-first interface.',
+    solution: 'Built the site in React, optimized content load paths, and deployed it to Vercel for fast production performance.',
+    kpis: ['Improved mobile usability', 'Fast interactive load times', 'Consistent React-based UI'],
+  },
 ];
 
 export const PROCESS_STEPS = [
