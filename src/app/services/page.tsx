@@ -297,7 +297,6 @@ export default function ServicesPage() {
       }>
         <ServicesContent />
       </Suspense>
-      <Footer />
     </PageContainer>
   );
 }

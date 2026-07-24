@@ -2,7 +2,6 @@ import React from 'react';
 import { Mail, Phone, MapPin, ShieldAlert, Globe, Lock, Clock } from 'lucide-react';
 import { PageContainer } from '@/components/shared/PageContainer';
 import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { ContactForm } from '@/components/portfolio/ContactForm';
 import { Card } from '@/components/ui/Card';
 
@@ -151,8 +150,6 @@ export default function ContactPage() {
 
         </div>
       </section>
-
-      <Footer />
     </PageContainer>
   );
 }

@@ -42,7 +42,7 @@ export const Navbar = () => {
         </Link>
 
         {/* Desktop Links */}
-        <nav className="relative hidden items-center gap-8 md:flex">
+        <nav className="relative hidden items-center gap-8 lg:flex">
           {NAVIGATION_LINKS.map((link) => {
             const isActive = pathname
               ? link.href === '/'
@@ -72,7 +72,7 @@ export const Navbar = () => {
         </nav>
 
         {/* Action Buttons (Theme Toggle + Consultation) */}
-        <div className="hidden items-center gap-4 md:flex">
+        <div className="hidden items-center gap-4 lg:flex">
           <button
             onClick={toggleTheme}
             className="text-slate-350 cursor-pointer rounded-xl border border-slate-800 bg-slate-900/40 p-2 transition-all duration-200 hover:bg-slate-800/40 hover:text-slate-100"
@@ -96,7 +96,7 @@ export const Navbar = () => {
         </div>
 
         {/* Mobile Theme Switcher + Menu Toggle */}
-        <div className="flex items-center gap-3 md:hidden">
+        <div className="flex items-center gap-3 lg:hidden">
           <button
             onClick={toggleTheme}
             className="text-slate-350 cursor-pointer rounded-xl border border-slate-800 bg-slate-900/40 p-2 transition-all hover:text-slate-100"
@@ -125,7 +125,7 @@ export const Navbar = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="mt-4 overflow-hidden rounded-xl border-t border-slate-800/60 bg-slate-900 md:hidden"
+            className="mt-4 overflow-hidden rounded-xl border-t border-slate-800/60 bg-slate-900 lg:hidden"
           >
             <div className="flex flex-col gap-6 px-6 py-8 text-left">
               {NAVIGATION_LINKS.map((link) => {

@@ -5,7 +5,6 @@ import Link from 'next/link';
 import { ArrowRight, Star, Shield, Cpu, Activity, Zap } from 'lucide-react';
 import { PageContainer } from '@/components/shared/PageContainer';
 import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
 import { Projects } from '@/components/portfolio/Projects';
 import { Button } from '@/components/ui/Button';
 import { Card } from '@/components/ui/Card';
@@ -226,8 +225,6 @@ export default function ProjectsPage() {
           </Link>
         </div>
       </section>
-
-      <Footer />
     </PageContainer>
   );
 }
