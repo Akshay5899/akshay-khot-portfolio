@@ -37,39 +37,6 @@ export const SERVICES = [
 
 export const PROJECTS = [
   {
-    title: 'Portfolio Website',
-    category: 'Personal Branding',
-    description: 'A polished portfolio site showcasing Akshay Pandurang Khot’s full-stack development work, modern UI, and service offerings.',
-    image: 'https://images.unsplash.com/photo-1483058712412-4245e9b90334?auto=format&fit=crop&w=800&q=80',
-    tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'React'],
-    link: '/projects',
-    challenge: 'Build a professional presence that reflects modern web engineering and personal branding.',
-    solution: 'Implemented a responsive App Router portfolio with animated sections, clean UX, and contact capture.',
-    kpis: ['Professional portfolio launched', 'Responsive across all devices', 'Fast page load performance'],
-  },
-  {
-    title: 'Lead Capture System',
-    category: 'Web Application',
-    description: 'A lightweight lead capture workflow with form validation, email submission, and backend persistence.',
-    image: 'https://images.unsplash.com/photo-1559526324-593bc073d938?auto=format&fit=crop&w=800&q=80',
-    tags: ['React', 'Next.js', 'Node.js', 'MongoDB'],
-    link: '/contact',
-    challenge: 'Create a reliable way for visitors to submit inquiries and convert them into leads.',
-    solution: 'Built a secure contact form paired with API routes and validation for smooth submissions.',
-    kpis: ['Improved inquiry flow', 'Secure form handling', 'Easy lead tracking'],
-  },
-  {
-    title: 'Custom Service Showcase',
-    category: 'UX & UI',
-    description: 'A curated services section that highlights custom development, integration, and full-stack delivery capabilities.',
-    image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80',
-    tags: ['UI/UX', 'Design Systems', 'Product Strategy'],
-    link: '/services',
-    challenge: 'Present service offerings clearly and professionally while maintaining an elegant brand identity.',
-    solution: 'Designed a refined services showcase with strong copy, responsive layout, and visual polish.',
-    kpis: ['Clear service messaging', 'Improved visitor engagement', 'Built brand authority'],
-  },
-  {
     title: 'Panchayat Samiti Pune',
     category: 'Web Application',
     description: 'SEO-optimized informational site for Panchayat Samiti Pune, deployed on Vercel.',
@@ -79,6 +46,17 @@ export const PROJECTS = [
     challenge: 'Create an accessible, SEO-first municipal website with clear information architecture.',
     solution: 'Implemented Next.js with semantic HTML, performant images, and structured metadata for SEO.',
     kpis: ['Improved search visibility', 'Fast TTFB on Vercel', 'Accessible content structure'],
+  },
+  {
+    title: 'Shivoraix',
+    category: 'Web Application',
+    description: 'A modern product website for Shivoraix, optimized for performance and conversion across devices.',
+    image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80',
+    tags: ['Next.js', 'SEO', 'Tailwind CSS', 'Vercel'],
+    link: 'https://www.shivoraix.io/',
+    challenge: 'Launch a polished, brand-forward site with fast load times and intuitive user flows.',
+    solution: 'Built a responsive Next.js experience with clear messaging, fast asset delivery, and SEO best practices.',
+    kpis: ['Improved engagement', 'Fast performance scores', 'Clear product positioning'],
   },
 ];
 
