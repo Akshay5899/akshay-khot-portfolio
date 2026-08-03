@@ -59,6 +59,17 @@ export const PROJECTS = [
     kpis: ['Improved engagement', 'Fast performance scores', 'Clear product positioning'],
   },
   {
+    title: 'Hospital Management System',
+    category: 'Web Application',
+    description: 'A modern healthcare operations platform built to streamline appointments, patient workflows, and administrative tasks with a clean, responsive experience.',
+    image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=800&q=80',
+    tags: ['Next.js', 'React', 'Healthcare', 'Vercel', 'Tailwind CSS'],
+    link: 'https://hospital-management-sigma-fawn.vercel.app/',
+    challenge: 'Create a dependable, user-friendly healthcare management portal with clear workflows for staff and administrators.',
+    solution: 'Implemented a polished Next.js experience with modular UI sections, responsive layouts, and a production-ready deployment on Vercel.',
+    kpis: ['Streamlined administrative workflows', 'Fast, responsive UI', 'Scalable healthcare-ready architecture'],
+  },
+  {
     title: 'APMC Newasa',
     category: 'Web Application',
     description: 'A responsive React app for APMC Newasa, designed for strong user experience and deployment on Vercel.',
