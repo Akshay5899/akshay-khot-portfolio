@@ -67,7 +67,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-3 gap-8">
           <div className="rounded-3xl border border-slate-800/40 bg-slate-900/40 p-8 backdrop-blur-sm">
             <span className="text-xs font-bold uppercase tracking-widest text-indigo-400">EXPERIENCE SUMMARY</span>
-            <h2 className="mt-4 text-3xl font-black text-slate-100 tracking-tight font-display uppercase">4.9+ Years in Full Stack Development</h2>
+            <h2 className="mt-4 text-3xl font-black text-slate-100 tracking-tight font-display uppercase">5 Years in Full Stack Development</h2>
             <p className="mt-4 text-xs text-slate-400 leading-relaxed">
               Experienced in MERN stack development, RESTful API architecture, JWT authentication, database design, and responsive front-end engineering.
             </p>
