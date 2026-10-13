@@ -52,7 +52,7 @@ export const Footer = () => {
             </span>
           </Link>
           <p className="text-sm leading-relaxed text-slate-400">
-            Architecting next-generation digital platforms for forward-thinking enterprises.
+            Architectin next-generation digital platforms for forward-thinking enterprises.
           </p>
           <div className="flex items-center gap-4 text-slate-400">
             <a href="#" className="transition-colors hover:text-slate-100" aria-label="Twitter">
