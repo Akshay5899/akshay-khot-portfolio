@@ -48,7 +48,7 @@ export const Footer = () => {
         <div className="flex flex-col gap-6 md:col-span-1">
           <Link href="/" className="group flex items-center">
             <span className="inline-flex items-center justify-center rounded-2xl border border-slate-800/70 bg-slate-900/80 px-3 py-2 text-sm font-semibold uppercase tracking-[0.35em] text-slate-100 shadow-sm shadow-slate-950/20 transition duration-300 group-hover:bg-slate-800/90">
-              AKs
+              AK
             </span>
           </Link>
           <p className="text-sm leading-relaxed text-slate-400">
