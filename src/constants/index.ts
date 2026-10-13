@@ -8,6 +8,7 @@ export const NAVIGATION_LINKS = [
   { name: 'Contact', href: '/contact' },
 ];
 
+
 export const SERVICES = [
   {
     icon: Cpu,
@@ -42,7 +43,7 @@ export const PROJECTS = [
     description: 'SEO-optimized informational portal for Panchayat Samiti, deployed on Vercel.',
     image: 'https://images.unsplash.com/photo-1505685296765-3a2736de412f?auto=format&fit=crop&w=800&q=80',
     tags: ['Next.js', 'React', 'SEO', 'Vercel', 'Tailwind CSS'],
-    link: 'https://panchayat-samiti-pune-seo.vercel.app/',
+    link: 'https://panchayatsamitihaveli.brawizz.com/',
     challenge: 'Create an accessible, SEO-first municipal website with clear information architecture.',
     solution: 'Implemented Next.js with semantic HTML, performant images, and structured metadata for SEO.',
     kpis: ['Improved search visibility', 'Fast TTFB on Vercel', 'Accessible content structure'],
@@ -264,8 +265,6 @@ export const TEAM_MEMBERS = [
     github: "#",
   }
 ];
-
-
 export const FAQS = [
   {
     question: "What primary software stacks does Akshay Khot support?",
