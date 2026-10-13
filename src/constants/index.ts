@@ -37,9 +37,9 @@ export const SERVICES = [
 
 export const PROJECTS = [
   {
-    title: 'Panchayat Samiti Pune',
+    title: 'Panchayat Samiti Portal',
     category: 'Web Application',
-    description: 'SEO-optimized informational site for Panchayat Samiti Pune, deployed on Vercel.',
+    description: 'SEO-optimized informational portal for Panchayat Samiti, deployed on Vercel.',
     image: 'https://images.unsplash.com/photo-1505685296765-3a2736de412f?auto=format&fit=crop&w=800&q=80',
     tags: ['Next.js', 'React', 'SEO', 'Vercel', 'Tailwind CSS'],
     link: 'https://panchayat-samiti-pune-seo.vercel.app/',
@@ -264,6 +264,8 @@ export const TEAM_MEMBERS = [
     github: "#",
   }
 ];
+
+
 export const FAQS = [
   {
     question: "What primary software stacks does Akshay Khot support?",
@@ -346,5 +348,3 @@ export const CAREERS_LIST = [
     ]
   }
 ];
-
-
